@@ -6,22 +6,17 @@
 		<body>
 		<h3>Ejercicio 3 </h3>
 		<?php
-		$aleatorio=random_int(1,9);
-		$j=1;
-		for ($i = 1; $i <= $aleatorio; $i++) {
-			
-			for($x=1;$x<=$j; $x++){
-			
-			
-			echo '<code>'."*";
-				
-
-			}
-			$j+=2;
-			echo"</code>";
-			echo "</br>";
-		}
-
-		?>
+        $filas = random_int(1,10);
+            for($i=1;$i<=$filas;$i++){
+                for($x=1;$x<=$filas-$i;$x++){
+                    echo "<code>&nbsp";
+                }
+                for($j=1;$j<=($i*2)-1;$j++){
+                    echo"*";
+                }
+                echo "</code>";
+                echo "</br>";
+            }
+        ?>
 		</body>
-</html>
+</hmlt>
